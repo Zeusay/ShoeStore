@@ -1,0 +1,60 @@
+<resources>
+
+<!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+<!-- Fragment Theme -->
+
+    <style name = "FragmentTheme">
+        <item name="android:background">@drawable/gradient_background</item>
+        <item name="android:padding">26dp</item>
+    </style>
+
+<!-- Text -->
+
+    <style name="HeadingText" parent="AppTheme">
+        <item name = "android:fontFamily">@font/poppins</item>
+        <item name= "android:text">@string/welcome_text</item>
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="DescriptorText">
+        <item name = "android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="StandardText">
+        <item name = "android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+<!-- Buttons -->
+
+    <style name = "ButtonDefault">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:fontFamily">@font/alef</item>
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+<!-- App Bar -->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
