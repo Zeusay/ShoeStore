@@ -7,11 +7,15 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
+import com.udacity.shoestore.models.Shoe
 import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_shoe_list.*
+import kotlinx.android.synthetic.main.shoe_list_layout.*
 
 class ShoeListFragment : Fragment() {
 
@@ -45,6 +49,10 @@ class ShoeListFragment : Fragment() {
             val action = ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment()
             findNavController().navigate(action)
         }
+
+        val adapter = ShoesAdapter(listOf(Shoe("Shoeey", 6.5, "Stu Inc", "Very shoepish")))
+        shoeListRV.adapter = adapter
+        shoeListRV.layoutManager = LinearLayoutManager(requireContext())
 
     }
 
