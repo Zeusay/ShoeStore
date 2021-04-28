@@ -7,7 +7,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.udacity.shoestore.models.Shoe
 
-class ShoesAdapter(private val shoes : List<Shoe>) : RecyclerView.Adapter<ShoeViewHolder>() {
+class ShoesAdapter : RecyclerView.Adapter<ShoeViewHolder>() {
+
+    private var shoes : List<Shoe> = emptyList()
+
+    fun setShoes (shoes: List<Shoe>) {
+        this.shoes = shoes
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShoeViewHolder {
       val row : View = LayoutInflater.from(parent.context).inflate(R.layout.shoe_list_layout, parent, false)

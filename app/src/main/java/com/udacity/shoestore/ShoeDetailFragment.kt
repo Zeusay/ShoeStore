@@ -38,3 +38,4 @@ class ShoeDetailFragment : Fragment() {
     }
 
 }
+//TODO: SET onclick listener for data in

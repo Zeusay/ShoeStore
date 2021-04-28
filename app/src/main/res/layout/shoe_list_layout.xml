@@ -6,11 +6,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@+id/shoeSize"
         app:layout_constraintStart_toEndOf="@+id/shoeSize"
-        android:padding="16dp">
-
+        android:padding="16dp"
+        app:layoutManager="LinearLayoutManager">
 
 
         <TextView
@@ -21,7 +21,8 @@
             app:layout_constraintEnd_toStartOf="@+id/shoeCompany"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/shoeName"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/background_light"/>
 
         <TextView
             android:id="@+id/shoeName"
@@ -29,7 +30,8 @@
             android:layout_height="wrap_content"
             android:text="@string/shoeNameTxt"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/background_light"/>
 
         <TextView
             android:id="@+id/shoeCompany"
@@ -37,7 +39,8 @@
             android:layout_height="wrap_content"
             android:text="@string/shoeCompanyTxt"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/background_light"/>
 
         <TextView
             android:id="@+id/shoeDesc"
@@ -46,7 +49,8 @@
             android:text="@string/shoeDescTxt"
             app:layout_constraintEnd_toEndOf="@+id/shoeCompany"
             app:layout_constraintStart_toStartOf="@+id/shoeName"
-            app:layout_constraintTop_toBottomOf="@+id/shoeSize" />
+            app:layout_constraintTop_toBottomOf="@+id/shoeSize"
+            android:textColor="@android:color/background_light"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
