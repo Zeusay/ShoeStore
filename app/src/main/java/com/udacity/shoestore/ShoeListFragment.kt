@@ -18,6 +18,7 @@ import com.udacity.shoestore.models.Shoe
 import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_shoe_list.*
 import kotlinx.android.synthetic.main.shoe_list_layout.*
+import timber.log.Timber
 
 class ShoeListFragment : Fragment() {
 
@@ -58,7 +59,9 @@ class ShoeListFragment : Fragment() {
         shoeListRV.adapter = adapter
         shoeListRV.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 
-        viewModel.shoes.observe(viewLifecycleOwner, Observer { shoes -> adapter.setShoes(shoes) })
+        viewModel.shoes.observe(viewLifecycleOwner, Observer { shoes -> adapter.setShoes(shoes)
+            Timber.v("New shoes arrived")})
+
 
     }
 
