@@ -36,7 +36,7 @@
     <string name="shoeCompanyTxt">Shoe Company</string>
     <string name="shoeSizeTxt">Shoe Size</string>
     <string name="shoeDescTxt">Shoe Description</string>
-    <string name="enter_shoe_details">Enter Shoe Details</string>
+    <string name="enter_shoe_details">Add New Shoe</string>
     <string name="shoe_name_detail">Shoe Name</string>
     <string name="shoe_company_detail">Shoe Company</string>
     <string name="shoe_size_detail">Shoe Size</string>
