@@ -31,6 +31,4 @@ class MainActivity : AppCompatActivity() {
             .setupWithNavController(navController, appBarConfiguration)
     }
 
-    private val viewModel: MainViewModel by viewModels()
-
 }
